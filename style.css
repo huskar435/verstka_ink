@@ -97,7 +97,7 @@ body, button {
         padding: 20px 100px;
     }
     .collection-section{
-        background-image: url(assets/glavkar1440.svg);
+        background-image: url(assets/glav1440kar.svg);
     }
     .mobile-menu-btn{
         display: none;
@@ -200,7 +200,7 @@ body, button {
         padding: 18.5px 36.5px;
     }
     .collection-section{
-        background-image: url(assets/glavkar690.svg);
+        background-image: url(assets/glav690kar.svg);
     }
     .collection-header img{
         height: 60px;
@@ -341,7 +341,7 @@ body, button {
         width: fit-content;
     }
     .collection-section{
-        background-image: url(assets/glavkar320.svg);
+        background-image: url(assets/glav320kar.svg);
     }
     .collection-header img{
         height: 50px;
