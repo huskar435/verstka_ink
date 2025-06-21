@@ -1,15 +1,15 @@
 :root {
-    --light-green-color: #E1EDE6;
-    --font: "Raleway", sans-serif;
-    --font-size-twenty: 20px;
-    --black-color: #2C2D35;
-    --green-color: #598D66; 
-    --dark-green-color: #376B44;
-    --grey-color: #86928B;
-    --font-size-eighteen: 18px;
-    --font-weight-medium: 500;
-    --white-color: #F4F6F5;
-    --medium-green-color: #D4E8D9;
+    --primary-light: #E1EDE6;
+    --main-font: "Raleway", sans-serif;
+    --text-md: 20px;
+    --text-dark: #2C2D35;
+    --primary-color: #598D66; 
+    --primary-dark: #376B44;
+    --text-gray: #86928B;
+    --text-sm: 18px;
+    --font-medium: 500;
+    --bg-light: #F4F6F5;
+    --primary-medium: #D4E8D9;
 }
 
 * {
@@ -19,383 +19,383 @@
 }
 
 body, button {
-    font-family: var(--font);
+    font-family: var(--main-font);
 }
 
-.container {
+.wrapper {
     margin: 0 auto;
 }
 @media (min-width: 1440px) {
-    .container {
+    .wrapper {
         max-width: 1110px;
     }
-    .container-header{
+    .header-wrapper{
         max-width: 1110px;
         margin: 0 auto;
     }
-    .header {
-    background-color: var(--light-green-color);
+    .main-header {
+    background-color: var(--primary-light);
     padding: 33px 0 32px 0;
     }
-    .header-link {
-        font-size: var(--font-size-twenty);
+    .nav-link {
+        font-size: var(--text-md);
     }
-    .about-right {
+    .hero-content {
         width: 540px;
     }
-    .about-title {
+    .hero-title {
         font-size: 60px;
     }
-    .about-text{
+    .hero-description{
         margin: 20px 0 60px 0;
     }
-    .about-button {
+    .hero-btn {
         padding: 21px 60px;
     }
-    .works-up-title {
+    .gallery-title {
         font-size: 40px;
     }
-    .work-example {
+    .art-card {
         width: 310px;
     }
-    .new-collection-title h2{
+    .collection-header h2{
         width: 420px;
         font-size: 40px;
     }
-    .new-collection-text p{
+    .collection-text p{
         width: 540px;
     }
-    .new-collection-button{
+    .collection-btn{
         padding: 21px 60px;
     }
-    .team{
+    .about-section{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .team-text{
+    .about-text{
         margin-top: 45px;
         width: 635px; ;
     }
-    .team-text p{
+    .about-text p{
         margin: 20px 0;
     }
-    .footer-flex{
+    .main-footer{
         display: flex;
         justify-content: space-between;
     }
-    .footer-right{
+    .footer-right-section{
         display: flex;
     }
-    .footer-links{
+    .footer-nav{
         margin-right: 253px;
     }
-    .contacts-phone{
+    .contact-phone{
         margin: 41px 0 8px 0;
     }
-    .work-buy{
+    .art-btn{
         padding: 20px 100px;
     }
-    .new-collection{
-        background-image: url(assets/background_1440.svg);
+    .collection-section{
+        background-image: url(assets/glavkar1440.svg);
     }
-    .header-button-mobile{
+    .mobile-menu-btn{
         display: none;
     }
-    .header-flex {
+    .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
-    .works-up {
+    .gallery-header {
     display: flex;
     justify-content: space-between;
     margin: 70px auto 30px auto;
     }
-    .works-second-button {
+    .gallery-filter {
     margin: 0 32px;
     }
-    .new-collection-text p{
-    font-size: var(--font-size-eighteen);
-    font-weight: var(--font-weight-medium);
+    .collection-text p{
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
     }
-    .new-collection-button{
+    .collection-btn{
         margin-top: 40px;
-        font-size: var(--font-size-twenty);
+        font-size: var(--text-md);
     }
-     .new-collection{
+     .collection-section{
         padding: 70px 0;
     }
-    .team{
+    .about-section{
     margin: 70px auto;
     }
-    .team-image img:nth-child(2){
+    .team-photos img:nth-child(2){
     margin: 0 30px;
     }
-    .team-text p{
-        font-size: var(--font-size-eighteen);
+    .about-text p{
+        font-size: var(--text-sm);
     }
-    .footer-row-mobile {
+    .footer-divider {
     display: none;
     }
-    .footer-link:nth-child(2){
+    .footer-item:nth-child(2){
     margin: 0 60px;
     }  
-    .footer-link h3{
-    color: var(--black-color);
-    font-size: var(--font-size-twenty);
-    font-weight: var(--font-weight-medium);
+    .footer-item h3{
+    color: var(--text-dark);
+    font-size: var(--text-md);
+    font-weight: var(--font-medium);
     margin-bottom: 6px;
     }
 }
 @media (min-width: 768px) and (max-width: 1439px){
-    .container {
+    .wrapper {
         max-width: 690px;
     }
-    .container-header{
+    .header-wrapper{
         max-width: 690px;
         margin: 0 auto;
     }
-    .header {
-    background-color: var(--light-green-color);
+    .main-header {
+    background-color: var(--primary-light);
     padding: 33px 0 32px 0;
     }
-    .header-link {
-        font-size: var(--font-size-eighteen);
+    .nav-link {
+        font-size: var(--text-sm);
     }
-    .about img{
+    .hero img{
         height: 330px;
         width: 380px;
     }
-    .about-title {
+    .hero-title {
         font-size: 40px;
     }
-    .about-text{
+    .hero-description{
         margin: 20px 0 40px 0;
     }
-    .about-button {
+    .hero-btn {
         padding: 18.5px 51.5px;
     }
-    .about-right {
+    .hero-content {
         width: 330px;
     }
-    .works-up-title {
+    .gallery-title {
         font-size: 30px;
     }
-    .work-example {
+    .art-card {
         width: 290px;
     }
-    .work-img{
+    .art-image{
         width: 290px;
     }
-    .work-buy{
+    .art-btn{
         padding: 20px 90px;
         width: fit-content;
     }
-    .new-collection-title h2{
+    .collection-header h2{
         width: 370px;
         font-size: 30px;
     }
-    .new-collection-button{
+    .collection-btn{
         padding: 18.5px 36.5px;
     }
-    .new-collection{
-        background-image: url(assets/background_690.svg);
+    .collection-section{
+        background-image: url(assets/glavkar690.svg);
     }
-    .new-collection-title img{
+    .collection-header img{
         height: 60px;
     }
-    .team-text{
+    .about-text{
         margin-top: 40px;
         width: 690px; ;
     }
-    .works-up-title {
+    .gallery-title {
         margin-bottom: 30px;
     }
-    .team-text p{
+    .about-text p{
         margin-bottom: 30px;
     }
-    .contacts{
+    .contact-info{
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
     }
-    .contacts-phone{
+    .contact-phone{
         margin: 0 0 8px 0;
     }
-    .footer-right{
+    .footer-right-section{
         display: flex;
         justify-content: space-between;
     }
-    .footer-social-info{
+    .footer-social-links{
         margin-right: 38px;
     }
-    .header-button-mobile{
+    .mobile-menu-btn{
         display: none;
     }
-   .header-flex {
+   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
-    .works-up {
+    .gallery-header {
     display: flex;
     justify-content: space-between;
     margin: 70px auto 30px auto;
     }
-    .works-second-button {
+    .gallery-filter {
     margin: 0 32px;
     }
-    .new-collection-text p{
-    font-size: var(--font-size-eighteen);
-    font-weight: var(--font-weight-medium);
+    .collection-text p{
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
     }
-    .new-collection-button{
+    .collection-btn{
         margin-top: 40px;
-        font-size: var(--font-size-twenty);
+        font-size: var(--text-md);
     }
-     .new-collection{
+     .collection-section{
         padding: 70px 0;
     }
-    .team{
+    .about-section{
     margin: 70px auto;
     }
-    .team-image img:nth-child(2){
+    .team-photos img:nth-child(2){
     margin: 0 30px;
     }
-    .team-text p{
-        font-size: var(--font-size-eighteen);
+    .about-text p{
+        font-size: var(--text-sm);
     }
-    .footer-row-mobile {
+    .footer-divider {
     display: none;
     }
-    .footer-link:nth-child(2){
+    .footer-item:nth-child(2){
     margin: 0 60px;
     }
-    .footer-link h3{
-    color: var(--black-color);
-    font-size: var(--font-size-twenty);
-    font-weight: var(--font-weight-medium);
+    .footer-item h3{
+    color: var(--text-dark);
+    font-size: var(--text-md);
+    font-weight: var(--font-medium);
     margin-bottom: 6px;
     }
 }
 @media (min-width: 320px) and (max-width: 767px){
-    .container {
+    .wrapper {
         max-width: 290px;
     }
-    .container-header{
+    .header-wrapper{
         max-width: 320px;
     }
-    .logo{
+    .brand-logo{
         display: flex;
         justify-content: center;
     }
-    .header-link{
+    .nav-link{
         display: none;
     }
-    .header-button-mobile{
+    .mobile-menu-btn{
         background: none;
         border: none;
     }
-    .header-links{
-        background-color: var(--light-green-color);
+    .nav-container{
+        background-color: var(--primary-light);
         justify-content: space-between;
         padding: 19px 15px;
     }
-    .about img{
+    .hero img{
         display: none;
     }
     header{
         margin-bottom: 60px;
     }
-    .about-title {
+    .hero-title {
         font-size: 30px;
     }
-     .about-text{
+     .hero-description{
         font-size: 14px;
         margin: 20px 0 40px 0;
     }
-    .about-button {
+    .hero-btn {
         padding: 14.5px 29px;
     }
-    .works-up{
+    .gallery-header{
         margin-bottom: 20px;
     }
-    .works-up-title{
+    .gallery-title{
         margin: 60px 0 20px 0;
     }
-    .works-up-title-mobile{
+    .mobile-gallery-title{
         margin: 30px 0 20px 0;
     }
-    .works-button-mobile-none{
+    .mobile-filter{
         display: none;
     }
-    .works-second-button{
+    .gallery-filter{
         margin: 0 0 0 20px;
     }
-    .work-img{
+    .art-image{
         width: 250px;
     }
-    .work-buy{
+    .art-btn{
         padding: 10px 70px;
         width: fit-content;
     }
-    .new-collection{
-        background-image: url(assets/background_320.svg);
+    .collection-section{
+        background-image: url(assets/glavkar320.svg);
     }
-    .new-collection-title img{
+    .collection-header img{
         height: 50px;
     }
-    .new-collection-title h2{
+    .collection-header h2{
         width: 370px;
         font-size: 24px;
     }
-    .new-collection-text p{
+    .collection-text p{
     font-size: 16px;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-medium);
     }
-    .new-collection-button{
+    .collection-btn{
         margin-top: 10px;
-        font-size: var(--font-size-eighteen);
+        font-size: var(--text-sm);
         padding: 14.5px 83.5px;
     }
-    .new-collection{
+    .collection-section{
         padding: 30px 0;
     }
-    .team-picture{
+    .team-image{
         width: 290px;
         height: 286px;
     }
-    .team{
+    .about-section{
     margin: 70px auto 94px auto;
     }
-    .team-image img:nth-child(2){
+    .team-photos img:nth-child(2){
     margin: 0 20px;
     }
-    .team-image{
+    .team-photos{
         margin-top: 20px;
     }
-    .team-text p{
+    .about-text p{
         font-size: 16px;
     }
     
 
-    .footer-flex {
+    .main-footer {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .contacts {
+  .contact-info {
     align-items: center;
     display: flex;
     margin-bottom: 20px;
   }
 
-  .contacts-info {
+  .contact-details {
     display: none;
   }
 
-  .footer-row-mobile {
+  .footer-divider {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -404,33 +404,33 @@ body, button {
     gap: 12px;
   }
 
-  .footer-row-mobile .contacts-phone {
+  .footer-divider .contact-phone {
     font-size: 16px;
     margin-bottom: 8px;
     white-space: nowrap;
     align-self: flex-start;
   }
 
-  .contacts-lable{
+  .contact-label{
     font-size: 16px;
   }
 
-  .footer-row-mobile .footer-link {
+  .footer-divider .footer-item {
     margin-bottom: 0;
   }
 
-  .footer-link-rep {
+  .footer-item-desktop {
     display: none;
   }
 
-  .footer-link h3 {
+  .footer-item h3 {
     font-size: 16px;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-medium);
     margin-bottom: 8px;
     color: #222;
   }
 
-  .footer-link a {
+  .footer-item a {
     display: block;
     color: #8c9a9e;
     font-size: 16px;
@@ -438,17 +438,17 @@ body, button {
     margin-bottom: 4px;
   }
 
-  .footer-links {
+  .footer-nav {
     width: 100%;
     gap: 12px;
     margin-bottom: 16px;
     justify-content: space-between;
   }
-  .footer-link-mobile{
+  .footer-item-mobile{
     margin-right: 8px;
   }
 
-  .footer-social-info {
+  .footer-social-links {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -456,7 +456,7 @@ body, button {
     margin-top: 16px;
   }
 
-  .footer-social-info::before {
+  .footer-social-links::before {
     content: "";
     display: block;
     width: 100%;
@@ -466,211 +466,211 @@ body, button {
     margin-top: 8px;
   }
 
-  .footer-social {
+  .social-icons {
     display: flex;
     gap: 32px;
     margin-bottom: 12px;
   }
 
-  .footer-social img {
+  .social-icons img {
     width: 32px;
     height: 32px;
   }
 
-  .footer-info {
+  .footer-copyright {
     color: #8c9a9e;
     font-size: 16px;
     text-align: center;
   }
 }
 
-.header-link {
-    color: var(--black-color);
+.nav-link {
+    color: var(--text-dark);
     text-decoration: none;
     margin-right: 60px;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-medium);
 }
-.header-button {
+.header-btn {
     border: none;
     background: none;
     cursor: pointer;
 }
-.header-links {
+.nav-container {
     display: flex;
     align-items: center;
 }
-.about {
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.about-title {
-    font-weight: var(--font-weight-medium);
+.hero-title {
+    font-weight: var(--font-medium);
 }
-.about-title span {
-    color: var(--green-color);
+.hero-title span {
+    color: var(--primary-color);
 }
-.about-text {
-    color: var(--grey-color);
-    font-size: var(--font-size-eighteen);
+.hero-description {
+    color: var(--text-gray);
+    font-size: var(--text-sm);
 }
-.about-button {
-    font-family: var(--font);
-    font-size: var(--font-size-twenty);
-    color: var(--green-color);
-    border: 1px solid var(--green-color);
+.hero-btn {
+    font-family: var(--main-font);
+    font-size: var(--text-md);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     background: none;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-medium);
     cursor: pointer;
 }
-.about-button:hover{
-    background-color: var(--dark-green-color);
-    color: var(--white-color);
+.hero-btn:hover{
+    background-color: var(--primary-dark);
+    color: var(--bg-light);
 }
 
-.works-up-title {
-    font-weight: var(--font-weight-medium);
-    color: var(--black-color);
+.gallery-title {
+    font-weight: var(--font-medium);
+    color: var(--text-dark);
 }
-.works-button-active {
+.filter-active {
     padding: 10px 20px;
-    color: var(--white-color);
-    font-size: var(--font-size-twenty);
-    font-weight: var(--font-weight-medium);
-    background-color: var(--dark-green-color);
+    color: var(--bg-light);
+    font-size: var(--text-md);
+    font-weight: var(--font-medium);
+    background-color: var(--primary-dark);
     border: none;
     border-radius: 20px;
     cursor: pointer;
 }
-.works-button {
+.filter-btn {
     padding: 10px 20px;
-    color: var(--black-color);
-    font-size: var(--font-size-twenty);
-    font-weight: var(--font-weight-medium);
-    background-color: var(--medium-green-color);
+    color: var(--text-dark);
+    font-size: var(--text-md);
+    font-weight: var(--font-medium);
+    background-color: var(--primary-medium);
     border: none;
     border-radius: 20px;
     cursor: pointer;
 }
-.works-button:hover{
-    background-color: var(--dark-green-color);
-    color:  var(--white-color);
+.filter-btn:hover{
+    background-color: var(--primary-dark);
+    color:  var(--bg-light);
 }
 
-.work-example {
-    background-color: var(--light-green-color);
+.art-card {
+    background-color: var(--primary-light);
     padding: 20px 20px 30px 20px;
     margin-bottom: 30px;
 }
-.work-artist {
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-eighteen);
-    color: var(--grey-color);
+.artist-name {
+    font-weight: var(--font-medium);
+    font-size: var(--text-sm);
+    color: var(--text-gray);
     width: fit-content;
 }
-.work-name {
-    font-weight: var(--font-weight-medium);
+.art-title {
+    font-weight: var(--font-medium);
     font-size: 30px;
-    color: var(--black-color);
+    color: var(--text-dark);
     width: fit-content;
 }
-.work-type {
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-eighteen);
-    color: var(--black-color);
+.art-medium {
+    font-weight: var(--font-medium);
+    font-size: var(--text-sm);
+    color: var(--text-dark);
     margin-top: 8px;
     margin-bottom: 30px;
     width: fit-content;
 }
-.work-price {
-    font-weight: var(--font-weight-medium);
+.art-price {
+    font-weight: var(--font-medium);
     font-size: 24px;
-    color: var(--green-color);
+    color: var(--primary-color);
     width: fit-content;
 }
-.work-buy {
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-twenty);
-    color: var(--green-color);
+.art-btn {
+    font-weight: var(--font-medium);
+    font-size: var(--text-md);
+    color: var(--primary-color);
     background: none;
     margin-top: 20px;
     cursor: pointer;
 }
-.work-buy:hover{
-    background-color: var(--dark-green-color);
-    color:  var(--white-color);
+.art-btn:hover{
+    background-color: var(--primary-dark);
+    color:  var(--bg-light);
     border: none;
 }
-.work-down{
+.gallery-grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-.new-collection{
-    color: var(--white-color);
+.collection-section{
+    color: var(--bg-light);
     background-repeat: repeat-x ;
 }
-.new-collection-title{
+.collection-header{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.new-collection-title h2{
-    font-weight: var(--font-weight-medium);
+.collection-header h2{
+    font-weight: var(--font-medium);
     margin-left: 20px;
 }
-.new-collection-text p{
+.collection-text p{
     margin-bottom: 20px;
     line-height: 150%;
 }
-.new-collection-button{
+.collection-btn{
     background-color: #EEDB6D;
     border: none;
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-medium);
     cursor: pointer;
 }
-.new-collection-button:hover{
+.collection-btn:hover{
     background-color: #e7c81c;
-    color: var(--white-color);
+    color: var(--bg-light);
 }
 
 
-.team-text p{
-    font-weight: var(--font-weight-medium);
-    color: var(--black-color);
+.about-text p{
+    font-weight: var(--font-medium);
+    color: var(--text-dark);
     line-height: 150%;
 }
 
 
 footer {
-    background-color: var(--light-green-color);
+    background-color: var(--primary-light);
     padding: 23px 0;
-    font-size: var(--font-size-eighteen);
-    font-weight: var(--font-weight-medium);
-    color: var(--grey-color);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-gray);
 }
-.contacts-phone{
-    font-size: var(--font-size-twenty);
-    color: var(--black-color);
+.contact-phone{
+    font-size: var(--text-md);
+    color: var(--text-dark);
 }
-.footer-links{
+.footer-nav{
     display: flex;
 }
-.footer-link a{
+.footer-item a{
     text-decoration: none;
-    color: var(--grey-color);
+    color: var(--text-gray);
     display: block;
     margin-bottom: 6px;
 }
-.social-second{
+.social-icon{
     margin: 0 23px;
 }
-.footer-social{
+.social-icons{
     margin-bottom: 10px;
 }
-.footer-info p{
+.footer-copyright p{
     font-size: 12px;
     margin-bottom: 6px;
 }
