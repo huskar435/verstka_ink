@@ -1,15 +1,15 @@
 :root {
     --primary-light: #E1EDE6;
     --main-font: "Raleway", sans-serif;
-    --text-md: 20px;
     --text-dark: #2C2D35;
+    --text-md: 20px;
+    --text-gray: #86928B;
     --primary-color: #598D66; 
     --primary-dark: #376B44;
-    --text-gray: #86928B;
     --text-sm: 18px;
     --font-medium: 500;
-    --bg-light: #F4F6F5;
     --primary-medium: #D4E8D9;
+    --bg-light: #F4F6F5;
 }
 
 * {
@@ -489,12 +489,22 @@ body, button {
     text-decoration: none;
     margin-right: 60px;
     font-weight: var(--font-medium);
+    transition: color 0.2s;
 }
+.nav-link:hover { 
+    color: var(--primary-dark); 
+}
+
 .header-btn {
     border: none;
     background: none;
     cursor: pointer;
+    transition: opacity 0.2s;
 }
+.header-btn:hover { 
+    opacity: 0.8; 
+}
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -522,6 +532,7 @@ body, button {
     background: none;
     font-weight: var(--font-medium);
     cursor: pointer;
+    transition: all 0.3s;
 }
 .hero-btn:hover{
     background-color: var(--primary-dark);
@@ -551,6 +562,7 @@ body, button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .filter-btn:hover{
     background-color: var(--primary-dark);
@@ -561,7 +573,9 @@ body, button {
     background-color: var(--primary-light);
     padding: 20px 20px 30px 20px;
     margin-bottom: 30px;
+    transition: transform 0.3s;
 }
+.art-card:hover { transform: translateY(-5px); }
 .artist-name {
     font-weight: var(--font-medium);
     font-size: var(--text-sm);
@@ -595,6 +609,7 @@ body, button {
     background: none;
     margin-top: 20px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .art-btn:hover{
     background-color: var(--primary-dark);
@@ -630,19 +645,18 @@ body, button {
     border: none;
     font-weight: var(--font-medium);
     cursor: pointer;
+    transition: all 0.3s;
 }
 .collection-btn:hover{
     background-color: #e7c81c;
     color: var(--bg-light);
 }
 
-
 .about-text p{
     font-weight: var(--font-medium);
     color: var(--text-dark);
     line-height: 150%;
 }
-
 
 footer {
     background-color: var(--primary-light);
@@ -654,22 +668,40 @@ footer {
 .contact-phone{
     font-size: var(--text-md);
     color: var(--text-dark);
+    transition: color 0.2s;
 }
+.contact-phone:hover { 
+    color: var(--primary-dark); 
+}
+
 .footer-nav{
     display: flex;
 }
+
 .footer-item a{
     text-decoration: none;
     color: var(--text-gray);
     display: block;
     margin-bottom: 6px;
+    transition: color 0.2s;
 }
+
+.footer-item a:hover { 
+    color: var(--primary-dark); 
+}
+
 .social-icon{
     margin: 0 23px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover { 
+    transform: scale(1.1); 
 }
 .social-icons{
     margin-bottom: 10px;
 }
+
 .footer-copyright p{
     font-size: 12px;
     margin-bottom: 6px;
