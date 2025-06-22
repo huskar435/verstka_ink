@@ -291,7 +291,7 @@ body, button {
         justify-content: center;
     }
     .nav-link{
-        display: none;
+        display: none ;
     }
     .mobile-menu-btn{
         background: none;
