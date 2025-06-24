@@ -301,6 +301,20 @@ body, button {
     }
 }
 @media (min-width: 320px) and (max-width: 767px){
+    .container-header {
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px; 
+    }
+    .header-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .wrapper {
         max-width: 290px;
     }
